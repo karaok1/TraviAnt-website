@@ -75,7 +75,7 @@
               display: block;
               position: relative;
               width: 100%;
-                max-width: 184px;
+                max-width: 150px;
               height: auto;
               padding: 8px 12px;
               outline: 0;
@@ -93,7 +93,7 @@
               text-decoration: none;
               white-space: nowrap;
             }
-    
+
             [data-netlify-identity-button] a:hover,
             [data-netlify-identity-button] a:focus {
               background-color: #007a70;
@@ -276,17 +276,13 @@
             <div class="container-fluid">
                 <div class="row bg-info justify-content-center align-items-center" style="height:100vh;">
                     <div class="col-sm-10 text-center">
-
-                        <!-- Add a menu:
-                        Log in / Sign up - when the user is not logged in
-                        Username / Log out - when the user is logged in
-                        -->
-                        <div data-netlify-identity-menu></div>
-
+                        
                         <!-- Add a simpler button:
                             Simple button that will open the modal.
                         -->
-                        <div data-netlify-identity-button>Login with Netlify Identity</div>
+                        <div class="btn btn-primary center-block">
+                            <div data-netlify-identity-button>Login</div>
+                        </div>
 
                         <h1><span class="display-2 text-warning">TraviAnt </span><span>v0.1a</span></h1>
                         <div>
