@@ -43,15 +43,16 @@
                 <div class="row bg-info justify-content-center align-items-center" style="height:100vh;">
                     <div class="col-sm-10 text-center">
 
-                        <div data-netlify-identity-menu="">
-                            <ul class="netlify-identity-menu">
-                                <li class="netlify-identity-item">
-                                    <a class="netlify-identity-signup" href="#">Sign up</a>
-                                </li><li class="netlify-identity-item">
-                                    <a class="netlify-identity-login" href="#">Log in</a>
-                                </li>
-                            </ul>
-                        </div>
+                        <!-- Add a menu:
+                        Log in / Sign up - when the user is not logged in
+                        Username / Log out - when the user is logged in
+                        -->
+                        <div data-netlify-identity-menu></div>
+
+                        <!-- Add a simpler button:
+                            Simple button that will open the modal.
+                        -->
+                        <div data-netlify-identity-button>Login with Netlify Identity</div>
 
                         <h1><span class="display-2 text-warning">TraviAnt </span><span>v0.1a</span></h1>
                         <div>
