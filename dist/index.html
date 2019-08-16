@@ -354,7 +354,7 @@
               } else {
                 timeAgo = (dateDiff / oneDay).toFixed(1) + " days ago";
               }
-              var releaseInfo = release.name + " was updated " + timeAgo + " and downloaded " + downloadCount.toLocaleString() + " times.";
+              var releaseInfo = "Current version: v" + release.tag_name + ", Updated " + timeAgo + ". Downloaded " + downloadCount.toLocaleString() + " times.";
               $(".download").attr("href", asset.browser_download_url);
               $(".release-info").text(releaseInfo);
               $(".release-info").fadeIn("slow");
